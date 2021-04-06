@@ -7,13 +7,28 @@
   --tertiary-dark: #690046;
 }
 
+.color-primary-dark {
+  background-color: var(--primary-dark);
+}
+
+.color-tertiary {
+  background-color: var(--tertiary);
+}
+
 .container {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
 .logo {
   height: 56px;
+}
+
+.grid-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3em;
+  margin: 5vh auto 5vh auto;
 }
 
 body {
@@ -27,7 +42,6 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2em 10%;
-  /* background-color: black; */
 }
 
 nav ul {
@@ -56,4 +70,112 @@ nav ul li a {
 
 nav ul a:hover {
   background-color: var(--secondary-dark);
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 3em;
+  color: var(--secondary);
+}
+
+.cta p {
+  margin: -1em 0 1.5em 0;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.5em;
+  color: gray;
+}
+.imgcta {
+  margin: 2em 0 0 0;
+  width: 35vw;
+  height: auto;
+}
+
+.cta a {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 2em;
+  padding: 1em 1em 1em 1em;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  margin: 0 1em 0 0;
+}
+
+.cta a:hover {
+  background-color: var(--primary-dark);
+}
+
+.card-classic {
+  border-radius: 2em;
+  color: white;
+  padding: 2em;
+  margin: 1.5em 0 1.5em 0;
+  font-family: Montserrat, sans-serif;
+  line-height: 1.5em;
+}
+
+.card-classic h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-classic ul {
+  margin: 0;
+  padding: 0;
+}
+
+.card-classic li {
+  list-style: none;
+}
+
+.card-classic span {
+  font-weight: bold;
+  background-color: var(--primary);
+  padding: 0.8em;
+  font-size: 1.2em;
+  border-radius: 0.5em;
+}
+
+.card-header {
+  margin: 0 0 1em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
+}
+
+.card-footer {
+  margin: 1em 0 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.expand-btn {
+  background-color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.expand-btn a {
+  margin: 0 0 0 0.2em;
+  font-family: Montserrat, sans-serif;
+  font-size: 1em;
+  color: var(--primary);
+  text-decoration: none;
 }
