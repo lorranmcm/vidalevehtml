@@ -16,7 +16,8 @@
 }
 
 .container {
-  max-width: 80%;
+  max-width: 960px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -27,8 +28,8 @@
 .grid-double {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 3em;
-  margin: 5vh auto 5vh auto;
+  grid-column-gap: 2em;
+  margin: 3vw 0;
 }
 
 body {
@@ -42,6 +43,16 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 2em 10%;
+  z-index: 100;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 nav ul {
@@ -72,6 +83,10 @@ nav ul a:hover {
   background-color: var(--secondary-dark);
 }
 
+#inicio {
+  margin-top: 10vw;
+}
+
 h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
@@ -87,7 +102,7 @@ h1 {
 }
 .imgcta {
   margin: 2em 0 0 0;
-  width: 35vw;
+  max-width: 450px;
   height: auto;
 }
 
@@ -99,7 +114,6 @@ h1 {
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  margin: 0 1em 0 0;
 }
 
 .cta a:hover {
@@ -178,4 +192,48 @@ h5 {
   font-size: 1em;
   color: var(--primary);
   text-decoration: none;
+}
+
+#clube {
+  background-color: var(--secondary);
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5em;
+  color: white;
+  /* padding: 1em 0 1em 0; */
+}
+
+#clube h1 {
+  margin: 0.5em 0 0.8em 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+#clube ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+#clube li {
+  line-height: 1.5em;
+  margin: 0 0 1em 0;
+  counter-increment: step-counter;
+}
+
+#clube li::before {
+  content: counter(step-counter);
+  font-family: Montserrat, sans-serif;
+  margin-right: 1em;
+  font-size: 1em;
+  background-color: white;
+  color: var(--secondary);
+  font-weight: bold;
+  padding: 0.1em 0.4em;
+  border-radius: 0.5em;
+}
+
+#clube a {
+  color: white;
+  font-weight: bold;
 }
