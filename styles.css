@@ -21,15 +21,95 @@
   margin: 0 auto;
 }
 
+section {
+  margin-top: 3em !important;
+}
+
 .logo {
   height: 56px;
 }
 
-.grid-double {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 2em;
-  margin: 3vw 0;
+.split {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+.btn-ctnr {
+  display: flex;
+  gap: 1em;
+  flex-direction: row;
+}
+
+@media (max-width: 70em) {
+  nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center !important;
+  }
+
+  .split {
+    text-align: center;
+    gap: 0;
+  }
+
+  .imgcta {
+    display: block;
+    align-self: center;
+    min-width: 15em;
+    order: -1;
+    max-width: 25em;
+  }
+
+  .btn-ctnr {
+    min-width: 12em;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .split,
+  .card-classic,
+  .card-header,
+  .card-footer {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 1em;
+  }
+
+  .plan-name {
+    flex-direction: column !important;
+  }
+
+  .expand-btn {
+    justify-content: center;
+  }
+
+  #clube h1 {
+    padding: 0 !important;
+    margin-top: 0;
+  }
+
+  #clube li::before {
+    display: none;
+  }
+
+  #clube li {
+    background-color: var(--secondary-dark);
+    padding: 1em;
+    border-radius: 1em;
+  }
 }
 
 body {
@@ -42,7 +122,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 2em 10%;
+  padding: 2rem 10%;
   z-index: 100;
   position: fixed;
   overflow: hidden;
@@ -62,58 +142,59 @@ nav ul {
   list-style: none;
   padding: 0;
   background-color: var(--secondary);
-  border-radius: 2em;
+  border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
 nav ul li {
-  padding: 0.8em 0;
+  padding: 0.8rem 0;
 }
+
 nav ul li a {
-  padding: 0.8em 1.6em;
+  padding: 0.8rem 1.6rem;
   color: white;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  font-size: 1em;
-  border-radius: 2em;
+  font-size: 1rem;
+  border-radius: 2rem;
 }
 
 nav ul a:hover {
   background-color: var(--secondary-dark);
 }
 
-#inicio {
-  margin-top: 10vw;
+.inicio {
+  margin-top: 25vh !important;
 }
 
 h1 {
   font-family: Montserrat, sans-serif;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 2.5rem;
   color: var(--secondary);
 }
 
 .cta p {
-  margin: -1em 0 1.5em 0;
+  margin: -1rem 0 1.5rem 0;
   font-family: Open Sans, sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2rem;
   color: gray;
 }
 .imgcta {
-  margin: 2em 0 0 0;
-  max-width: 450px;
   height: auto;
+  width: 50%;
 }
 
 .cta a {
   background-color: var(--primary);
   color: white;
-  border-radius: 2em;
-  padding: 1em 1em 1em 1em;
+  border-radius: 2rem;
+  padding: 0.8rem;
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
+  /* width: 50%; */
 }
 
 .cta a:hover {
@@ -203,10 +284,9 @@ h5 {
 }
 
 #clube h1 {
-  margin: 0.5em 0 0.8em 0;
-  padding: 0;
+  padding: 1em 0 0 0;
   font-family: Montserrat, sans-serif;
-  font-size: 2em;
+  font-size: 2.5rem;
   color: white;
 }
 
