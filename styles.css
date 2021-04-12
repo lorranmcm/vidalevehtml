@@ -1,18 +1,36 @@
 :root {
   --primary: #00ba4a;
-  --primary-dark: #008736;
+  --primary-semi: #238b4d;
+  --primary-dark: #007931;
   --secondary: #ff9410;
   --secondary-dark: #ff7300;
   --tertiary: #942670;
-  --tertiary-dark: #690046;
+  --tertiary-semi: #6f315b;
+  --tertiary-dark: #600c45;
+}
+
+.color-primary {
+  background-color: var(--primary);
 }
 
 .color-primary-dark {
   background-color: var(--primary-dark);
 }
 
+.color-primary-semi {
+  background-color: var(--primary-semi);
+}
+
 .color-tertiary {
   background-color: var(--tertiary);
+}
+
+.color-tertiary-semi {
+  background-color: var(--tertiary-semi);
+}
+
+.color-tertiary-dark {
+  background-color: var(--tertiary-dark);
 }
 
 .container {
@@ -27,6 +45,17 @@ section {
 
 .logo {
   height: 56px;
+}
+
+.plan-logo {
+  height: 3rem;
+  width: auto;
+}
+
+.star {
+  height: 2rem;
+  width: auto;
+  content: url("./img/star.png");
 }
 
 .split {
@@ -219,6 +248,16 @@ h5 {
   padding: 0;
 }
 
+.card-classic h2 {
+  font-weight: 500;
+  font-size: 1.2em;
+  line-height: 1.1;
+}
+
+.card-classic h2 strong {
+  font-size: 1.5em;
+}
+
 .card-classic ul {
   margin: 0;
   padding: 0;
@@ -230,7 +269,8 @@ h5 {
 
 .card-classic span {
   font-weight: bold;
-  background-color: var(--primary);
+  background-color: white;
+  color: var(--secondary-dark);
   padding: 0.8em;
   font-size: 1.2em;
   border-radius: 0.5em;
@@ -248,7 +288,7 @@ h5 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.2em;
+  gap: 0.8rem;
 }
 
 .card-footer {
@@ -271,7 +311,7 @@ h5 {
   margin: 0 0 0 0.2em;
   font-family: Montserrat, sans-serif;
   font-size: 1em;
-  color: var(--primary);
+  color: var(--secondary-dark);
   text-decoration: none;
 }
 
