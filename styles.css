@@ -33,6 +33,10 @@
   background-color: var(--tertiary-dark);
 }
 
+.purple {
+  color: var(--tertiary);
+}
+
 .container {
   max-width: 960px;
   width: 80%;
@@ -138,6 +142,10 @@ section {
     background-color: var(--secondary-dark);
     padding: 1em;
     border-radius: 1em;
+  }
+
+  .plan-table table {
+    width: 100% !important;
   }
 }
 
@@ -356,4 +364,36 @@ h5 {
 #clube a {
   color: white;
   font-weight: bold;
+}
+
+.plan-table {
+  font-size: 1rem;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.plan-table table {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.plan-table thead {
+  height: 3rem;
+  font-weight: bold;
+  color: var(--primary);
+  font-size: 2em;
+  text-align: left;
+}
+
+.plan-table tbody tr {
+  text-align: left;
+}
+
+.plan-table tbody tr td + td {
+  text-align: right;
+  width: 5rem;
 }
