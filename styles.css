@@ -43,6 +43,15 @@
   margin: 0 auto;
 }
 
+.only-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
 section {
   margin-top: 3em !important;
 }
@@ -90,6 +99,11 @@ section {
   .split {
     text-align: center;
     gap: 0;
+  }
+
+  .only-card {
+    text-align: center;
+    width: auto !important;
   }
 
   .imgcta {
