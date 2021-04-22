@@ -126,6 +126,12 @@ section {
     align-items: center;
   }
 
+  .cta-buy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .split,
   .card-classic,
   .card-header,
